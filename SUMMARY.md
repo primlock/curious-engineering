@@ -1,3 +1,11 @@
 # Table of contents
 
-* [Page](README.md)
+* [Introduction](README.md)
+
+## Core Concepts
+
+* [REST](core-concepts/rest.md)
+
+## System Components
+
+* [Kafka](system-components/kafka.md)
