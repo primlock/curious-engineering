@@ -18,36 +18,9 @@ TCP is a **connection based** protocol that occurs on the transport layer of the
 
 ### TCP Header
 
-<table>
-  <tr>
-    <td colspan="2" style="text-align:center">source port (16)</td>
-    <td colspan="2" style="text-align:center">destination port (16)</td>
-  </tr>
-  <tr>
-    <td colspan="4" style="text-align:center">sequence number (32)</td>
-  </tr>
-  <tr>
-    <td colspan="4" style="text-align:center">acknowledgement number (32)</td>
-  </tr>
-  <tr>
-    <td>header length (4)</td>
-    <td>reserved (6)</td>
-    <td>flags (6)</td>
-    <td>window (16)</td>
-  </tr>
-  <tr>
-    <td colspan="2" style="text-align:center">checksum (16)</td>
-    <td colspan="2" style="text-align:center">urgent (16)</td>
-  </tr>
-  <tr>
-    <td colspan="4" style="text-align:center">options</td>
-  </tr>
-  <tr>
-    <td colspan="4" style="text-align:center">data</td>
-  </tr>
-</table>
+An example of how the bits in the TCP Header are organized. The header is 32 bits wide and 20 bytes long.
 
-Minimum: 20 bytes, Maximum: 60 bytes. _Table values expressed in bits_.
+<img alt="A figure of TCP Header table" src="figures/tcp-header.jpg"  width=80%>
 
 ### 3-Way Handshake
 
@@ -62,7 +35,7 @@ The TCP 3-way handshake is a process which is used in a TCP/IP network to make a
 
 When a packet is sent over TCP, the recipient must always acknowledge what they have received. The first computer sends a packet with data and a sequence number. The second computer acknowledges it by setting the ACK bit and increasing the acknowledgement number by the length of the received data. Those two numbers help the computers to keep track of which data was successfully received, which data was lost, and which data was accidentally sent twice.[^3] 
 
-<img alt="A figure of the 3-way handshake" src="figures/3-way-handshake.png"  width=60%>
+<img alt="A figure of the 3-way handshake" src="figures/3-way-handshake.png"  width=80%>
 
 >1. **SYN**: The connection begins with the host sending the SYN packet to the destination. Inside the packet is a sequence number (4321) that indicates the beginning of the sequence numbers for the data that the host will transmit.
 >2. **SYN-ACK**: The destination host receives the packet and responds with SYN and its sequence number (5501). The response also includes the includes the acknowledgement number, which is the origin host's sequence number plus 1 (4322).
