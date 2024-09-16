@@ -5,6 +5,7 @@
 ## Core Concepts
 
 * [REST](core-concepts/rest.md)
+* [RPC](core-concepts/rpc.md)
 
 ## System Components
 
