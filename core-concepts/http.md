@@ -67,23 +67,23 @@ An HTTP response has the following elements:
 
 <img alt="HTTP response diagram" src="figures/http-response.png" width="55%">
 
-###### Version 
+##### Version 
 
 This is the version of the HTTP protocol.
 
-###### Status Code 
+##### Status Code 
 
 This is the code indicating if the request was successful or not, and why.
 
-###### Status Message 
+##### Status Message 
 
 A short description of the status code.
 
-###### Headers
+##### Headers
 
 See request headers.
 
-###### Body
+##### Body
 
 See request body.
 
