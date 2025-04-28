@@ -1,12 +1,14 @@
-# Routers and Switches
+# Routers, Switches and Modems
 
-What is a router and a switch and how do they work?
+What is a router, switch and a modem and how do they work?
 
-<img alt="routers-and-switches" src="figures/router-and-switch.png"  width=30%>
+<img alt="routers-and-switches" src="figures/router-switch-modem.png"  width=30%>
 
 ## What is a Router?
 
 A router is a device that **connects two or more packet-switched networks or subnetworks**. It performs two primary functions:
+
+<img alt="router" src="figures/router.png">
 
 * Managing traffic between these networks by forwarding data packets to their intended IP-Addresses.
 * Allowing multiple devices to use the same internet connection.
@@ -33,6 +35,18 @@ A router operates at **layer 3 - the network layer** of the OSI model. It inspec
 
 A network switch **connects devices within a network**, often a local area network, and forwards data packets to and from those devices. A switch only sends data to the devices that is intended for, which may include another switch, a router or a users computer (but not to a network of multiple devices).
 
+<img alt="switch" src="figures/switch.png">
+
 ### What Layer Does it Operate On?
 
 Switches can operate at **layer 2 - the data link layer** or at **layer 3 - the network layer** of the OSI model. Layer 2 switches forward data based on the destination MAC address while the layer 3 switches forward data based on the destination IP address. Some switches can do both. Most switches are layer 2 and connect devices in their network over ethernet cables.
+
+## What is a Modem?
+
+A modem is a device that allows devices to connect to the internet by converting digital signals into analog signals that can be transmitted over telephone lines or cable networks. They also perform the opposite action of converting analog signals that come over transmission medium into digital signals. The word *modem* stands for **modulator-demodulator** to express it's function.
+
+<img alt="modem" src="figures/modem.png">
+
+### What Layer Does it Operate On?
+
+Modems operates at **layer 1 - the physical layer** of the OSI model converting digital signals into analog to be transmitted and received over the network. They can also operate at **layer 2** to handle error-free data transmission and data framing. This ensures data is packaged corretly and transmitted reliably across the network.
